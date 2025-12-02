@@ -3,127 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentasi - Perda Jabar No. 10 Tahun 2018</title>
+    <title>Presentasi KI - Canva Style</title>
 
     <!-- Reveal.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/sky.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Modern & Fancy Canva Style -->
     <style>
         body {
             font-family: "Poppins", sans-serif;
-            background: linear-gradient(135deg, #f7f8fc, #e3f2fd);
+            background: linear-gradient(135deg, #fff4e6, #fef6ff, #e7f5ff);
+            overflow: hidden;
         }
 
+        /* ===== Slide Styling ===== */
         .slides section {
-            background: rgba(255, 255, 255, 0.6);
             padding: 45px;
-            border-radius: 20px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.7);
         }
 
-        h1, h2 {
-            font-weight: 700;
-            color: #1565c0;
+        /* Fancy animation */
+        .slides section.present {
+            animation: fadeIn 1.2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
+        /* ===== Typography ===== */
         h1 {
-            font-size: 2.7rem;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff6b6b;
+            text-shadow: 0 0 20px rgba(255, 107, 107, 0.45);
         }
 
         h2 {
-            font-size: 2.1rem;
-            color: #0d47a1;
+            font-size: 2.4rem;
+            color: #4dabf7;
+            font-weight: 600;
         }
 
+        p, li {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* List Decoration */
         ul li {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            padding-left: 25px;
+            margin-bottom: 12px;
+            padding-left: 30px;
             position: relative;
         }
 
         ul li::before {
-            content: "✔";
+            content: "★";
+            color: #ff922b;
             position: absolute;
             left: 0;
-            color: #1976d2;
-            font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        .presenter {
-            margin-top: 10px;
+        /* ===== Decorative Shapes (Canva style) ===== */
+        .shape {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.35;
+            filter: blur(4px);
+        }
+
+        .shape1 {
+            width: 220px;
+            height: 220px;
+            background: #ffd8a8;
+            border-radius: 50%;
+            top: -40px;
+            left: -30px;
+        }
+
+        .shape2 {
+            width: 280px;
+            height: 280px;
+            background: #b2f2bb;
+            border-radius: 40%;
+            bottom: -30px;
+            right: -50px;
+        }
+
+        .shape3 {
+            width: 180px;
+            height: 180px;
+            background: #74c0fc;
+            border-radius: 50%;
+            top: 150px;
+            right: -20px;
+        }
+
+        /* ===== Hierarchy Graphic ===== */
+        .hierarchy-box {
+            padding: 18px 25px;
+            border-radius: 15px;
+            background: #e7f5ff;
+            border-left: 8px solid #339af0;
+            margin: 12px 0;
             font-size: 1.2rem;
-            color: #0d47a1;
-            font-weight: 600;
+        }
+
+        .hierarchy-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1c7ed6;
+            margin-bottom: 8px;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- Background Decorations -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
     <div class="reveal">
         <div class="slides">
 
+            <!-- SLIDE 1 -->
             <section>
-                <h1>Perda Provinsi Jawa Barat<br>No. 10 Tahun 2018</h1>
+                <h1>Perda Prov. Jawa Barat No. 10 Tahun 2018</h1>
                 <h2>Pengelolaan Kekayaan Intelektual</h2>
-                <p class="presenter">Disusun oleh: Basiran, Bima, Apis</p>
+                <p style="opacity: 0.7;">Disusun oleh: <b>Basiran, Bima, Apis</b></p>
             </section>
 
+            <!-- SLIDE 2 -->
             <section>
-                <h2>Tujuan Perda</h2>
+                <h2>Pendahuluan</h2>
                 <ul>
-                    <li>Meningkatkan perlindungan hukum terhadap inovasi masyarakat.</li>
-                    <li>Mendorong kreativitas di bidang teknologi dan seni.</li>
-                    <li>Meningkatkan daya saing daerah melalui inovasi.</li>
+                    <li>Pentingnya perlindungan kekayaan intelektual di Jawa Barat.</li>
+                    <li>Mendorong kreativitas serta pertumbuhan inovasi daerah.</li>
+                    <li>Meliputi Hak Cipta, Paten, Merek, Rahasia Dagang, dan Desain Industri.</li>
                 </ul>
             </section>
 
+            <!-- SLIDE 3 -->
             <section>
-                <h2>Ruang Lingkup KI</h2>
+                <h2>Ketentuan Utama</h2>
                 <ul>
-                    <li>Hak Cipta</li>
-                    <li>Paten dan Inovasi Teknologi</li>
-                    <li>Merek dan Identitas Produk</li>
-                    <li>Desain Industri</li>
-                    <li>Rahasia Dagang</li>
+                    <li>KI merupakan hasil kreativitas manusia dalam ilmu pengetahuan, seni, dan teknologi.</li>
+                    <li>Pemilik KI memiliki hak eksklusif yang wajib dijaga dan dimanfaatkan.</li>
+                    <li>Pengelolaan KI dilakukan bersama pemerintah dan masyarakat.</li>
                 </ul>
             </section>
 
+            <!-- SLIDE 4 -->
             <section>
-                <h2>Peran Pemerintah Daerah</h2>
+                <h2>Implementasi Kebijakan</h2>
                 <ul>
-                    <li>Menyediakan fasilitas pendaftaran KI.</li>
-                    <li>Memberikan edukasi kepada masyarakat.</li>
-                    <li>Melakukan monitoring dan evaluasi perlindungan KI.</li>
+                    <li>Pemerintah membentuk lembaga khusus pengelola KI.</li>
+                    <li>Sosialisasi edukatif kepada masyarakat.</li>
+                    <li>Monitoring dan evaluasi pemanfaatan kekayaan intelektual.</li>
                 </ul>
             </section>
 
+            <!-- SLIDE 5 (New: HIERARKI UUD) -->
             <section>
-                <h2>Manfaat Pengelolaan KI</h2>
-                <ul>
-                    <li>Meningkatkan pendapatan melalui royalti.</li>
-                    <li>Melahirkan produk lokal yang berkualitas tinggi.</li>
-                    <li>Menekan pelanggaran dan pemalsuan produk.</li>
-                </ul>
+                <h2>Hierarki Peraturan Perundang-undangan</h2>
+
+                <div class="hierarchy-box">
+                    <div class="hierarchy-title">1. UUD 1945</div>
+                    Norma hukum tertinggi di Indonesia.
+                </div>
+
+                <div class="hierarchy-box" style="background:#fff0f6; border-left-color:#e64980;">
+                    <div class="hierarchy-title">2. Ketetapan MPR</div>
+                    Ketentuan yang memperjelas pelaksanaan UUD.
+                </div>
+
+                <div class="hierarchy-box" style="background:#f4fce3; border-left-color:#82c91e;">
+                    <div class="hierarchy-title">3. UU / Perppu</div>
+                    Peraturan yang mengatur hal penting bagi negara.
+                </div>
+
+                <div class="hierarchy-box" style="background:#e8f7ff; border-left-color:#228be6;">
+                    <div class="hierarchy-title">4. PP - Peraturan Pemerintah</div>
+                    Penjabaran teknis dari Undang-Undang.
+                </div>
+
+                <div class="hierarchy-box" style="background:#fff9db; border-left-color:#fcc419;">
+                    <div class="hierarchy-title">5. Perpres - Peraturan Presiden</div>
+                    Aturan yang ditetapkan Presiden untuk menjalankan PP.
+                </div>
+
+                <div class="hierarchy-box" style="background:#f3f0ff; border-left-color:#845ef7;">
+                    <div class="hierarchy-title">6. Perda Provinsi</div>
+                    Termasuk → <b>Perda No. 10 Tahun 2018</b>.
+                </div>
             </section>
 
-            <section>
-                <h2>Contoh Aplikasi KI di Jawa Barat</h2>
-                <ul>
-                    <li>Produk UMKM khas daerah.</li>
-                    <li>Inovasi teknologi pertanian dan industri.</li>
-                    <li>Karya seni, musik, dan desain lokal.</li>
-                </ul>
-            </section>
-
+            <!-- SLIDE 6 -->
             <section>
                 <h2>Kesimpulan</h2>
                 <ul>
-                    <li>Kekayaan Intelektual adalah aset strategis daerah.</li>
-                    <li>Perlindungan KI perlu dukungan bersama.</li>
-                    <li>Mari kembangkan kreativitas dan inovasi di Jawa Barat.</li>
+                    <li>KI adalah aset penting bagi ekonomi daerah.</li>
+                    <li>Perda ini mendukung inovasi dan kreativitas masyarakat Jabar.</li>
+                    <li>Hierarki hukum menjadi dasar kuat keberlakuan peraturan daerah.</li>
+                    <li>Mari lindungi dan manfaatkan kekayaan intelektual bersama-sama.</li>
                 </ul>
             </section>
 
@@ -133,7 +227,7 @@
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
     <script>
         Reveal.initialize({
-            transition: "slide",
+            transition: "convex",
             backgroundTransition: "fade"
         });
     </script>
