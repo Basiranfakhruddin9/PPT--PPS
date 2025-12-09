@@ -3,222 +3,1221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentasi KI - Canva Style</title>
+    <title>Presentasi KI - Canva Ultra Aesthetic</title>
 
     <!-- Reveal.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - More Varieties -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Custom Modern & Fancy Canva Style -->
+    <!-- Custom Canva-Level CSS -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== Background Ultra Aesthetic (Advanced Multi-Layer Gradient) ===== */
         body {
-            font-family: "Poppins", sans-serif;
-            background: linear-gradient(135deg, #fff4e6, #fef6ff, #e7f5ff);
+            font-family: "Inter", "Poppins", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
             overflow: hidden;
-        }
-
-        /* ===== Slide Styling ===== */
-        .slides section {
-            padding: 45px;
-            border-radius: 25px;
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
-            border: 2px solid rgba(255, 255, 255, 0.7);
-        }
-
-        /* Fancy animation */
-        .slides section.present {
-            animation: fadeIn 1.2s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* ===== Typography ===== */
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ff6b6b;
-            text-shadow: 0 0 20px rgba(255, 107, 107, 0.45);
-        }
-
-        h2 {
-            font-size: 2.4rem;
-            color: #4dabf7;
-            font-weight: 600;
-        }
-
-        p, li {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: #333;
-        }
-
-        /* List Decoration */
-        ul li {
-            margin-bottom: 12px;
-            padding-left: 30px;
             position: relative;
         }
 
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Animated Mesh Gradient Overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(173, 216, 230, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 228, 181, 0.2) 0%, transparent 50%);
+            animation: meshMove 20s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes meshMove {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-30px, 30px) scale(0.9); }
+        }
+
+        /* ===== Floating Ornaments (Enhanced Aesthetic Shapes) ===== */
+        .blob {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.6;
+            animation: float 8s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px) translateX(0px) scale(1) rotate(0deg); 
+            }
+            25% { 
+                transform: translateY(-40px) translateX(20px) scale(1.15) rotate(90deg); 
+            }
+            50% { 
+                transform: translateY(-60px) translateX(-20px) scale(1.1) rotate(180deg); 
+            }
+            75% { 
+                transform: translateY(-20px) translateX(10px) scale(1.05) rotate(270deg); 
+            }
+        }
+
+        .blob1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            top: -80px; 
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .blob2 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            bottom: -100px; 
+            right: -100px;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        .blob3 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            top: 50%; 
+            left: 75%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+        .blob4 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            top: 20%; 
+            right: 10%;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        /* ===== Reveal Container ===== */
+        .reveal {
+            position: relative;
+            z-index: 10;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* ===== Slide Container (Premium Glassmorphism) ===== */
+        .slides section {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 60px 70px;
+            border-radius: 40px;
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
+            box-shadow: 
+                0 20px 80px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.8),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            position: relative;
+            overflow: visible;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Allow scrolling for long content inside slides */
+        .slides section.present {
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 85vh;
+        }
+
+        /* Animated Gradient Border */
+        .slides section::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b9d, #c44569, #6c5ce7, #00d2d3, #ff6b9d);
+            background-size: 300% 300%;
+            border-radius: 40px;
+            z-index: -1;
+            opacity: 0;
+            animation: borderGlow 3s ease infinite;
+            filter: blur(8px);
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { 
+                background-position: 0% 50%;
+                opacity: 0;
+            }
+            50% { 
+                background-position: 100% 50%;
+                opacity: 0.3;
+            }
+        }
+
+        /* Light glow corners (multiple) */
+        .slides section::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255, 160, 200, 0.4), transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: glowPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes glowPulse {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+        }
+
+        /* Additional glow on bottom right */
+        .slides section {
+            background-image: 
+                radial-gradient(circle at 90% 90%, rgba(100, 200, 255, 0.3), transparent 60%);
+        }
+
+        /* Smooth Entrance Animation (Enhanced) */
+        .slides section.present {
+            animation: fadeSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes fadeSlideIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(40px) scale(0.95) rotateX(5deg); 
+                filter: blur(10px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0) scale(1) rotateX(0deg); 
+                filter: blur(0);
+            }
+        }
+
+        /* ===== Typography (Enhanced) ===== */
+        h1 {
+            font-family: "Playfair Display", "Poppins", serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 50%, #6c5ce7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(255, 107, 157, 0.3);
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            animation: titleGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes titleGlow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+
+        h2 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #3b8df7 0%, #6c5ce7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.3px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b8df7, #6c5ce7);
+            border-radius: 2px;
+            animation: underlineExpand 0.6s ease-out;
+        }
+
+        @keyframes underlineExpand {
+            from { width: 0; }
+            to { width: 60px; }
+        }
+
+        p, li {
+            font-size: 1.3rem;
+            color: #2d3748;
+            line-height: 1.9;
+            font-weight: 400;
+        }
+
+        /* Enhanced Modern Bullet Points with Icons */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 18px;
+            padding-left: 50px;
+            position: relative;
+            transition: transform 0.3s ease, color 0.3s ease;
+            animation: slideInLeft 0.6s ease-out backwards;
+        }
+
+        ul li:nth-child(1) { animation-delay: 0.1s; }
+        ul li:nth-child(2) { animation-delay: 0.2s; }
+        ul li:nth-child(3) { animation-delay: 0.3s; }
+        ul li:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
         ul li::before {
-            content: "★";
-            color: #ff922b;
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
             position: absolute;
             left: 0;
-            font-size: 1.2rem;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+            transition: all 0.3s ease;
         }
 
-        /* ===== Decorative Shapes (Canva style) ===== */
-        .shape {
-            position: absolute;
-            z-index: -1;
-            opacity: 0.35;
-            filter: blur(4px);
+        ul li:hover {
+            transform: translateX(5px);
+            color: #1a202c;
         }
 
-        .shape1 {
-            width: 220px;
-            height: 220px;
-            background: #ffd8a8;
-            border-radius: 50%;
-            top: -40px;
-            left: -30px;
+        ul li:hover::before {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.6);
         }
 
-        .shape2 {
-            width: 280px;
-            height: 280px;
-            background: #b2f2bb;
-            border-radius: 40%;
-            bottom: -30px;
-            right: -50px;
-        }
-
-        .shape3 {
-            width: 180px;
-            height: 180px;
-            background: #74c0fc;
-            border-radius: 50%;
-            top: 150px;
-            right: -20px;
-        }
-
-        /* ===== Hierarchy Graphic ===== */
+        /* ===== Hierarki UUD Box Premium (Enhanced) ===== */
         .hierarchy-box {
-            padding: 18px 25px;
-            border-radius: 15px;
-            background: #e7f5ff;
-            border-left: 8px solid #339af0;
-            margin: 12px 0;
-            font-size: 1.2rem;
+            padding: 25px 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 18px 0;
+            border-left: 6px solid;
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(255, 255, 255, 0.5);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            animation: boxSlideIn 0.6s ease-out backwards;
+        }
+
+        @keyframes boxSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hierarchy-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .hierarchy-box:hover {
+            transform: translateX(8px) translateY(-2px);
+            box-shadow: 
+                0 12px 35px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.7);
+        }
+
+        .hierarchy-box:hover::before {
+            opacity: 1;
         }
 
         .hierarchy-title {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hierarchy-title::before {
+            content: "\f02d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+
+        .hierarchy-box p {
+            font-size: 1.15rem;
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Color variations for hierarchy boxes */
+        .hierarchy-box:nth-child(1) { border-left-color: #339af0; }
+        .hierarchy-box:nth-child(1) .hierarchy-title { color: #1c7ed6; }
+        
+        .hierarchy-box:nth-child(2) { border-left-color: #e64980; }
+        .hierarchy-box:nth-child(2) .hierarchy-title { color: #c2255c; }
+        
+        .hierarchy-box:nth-child(3) { border-left-color: #82c91e; }
+        .hierarchy-box:nth-child(3) .hierarchy-title { color: #66a80f; }
+        
+        .hierarchy-box:nth-child(4) { border-left-color: #228be6; }
+        .hierarchy-box:nth-child(4) .hierarchy-title { color: #1971c2; }
+        
+        .hierarchy-box:nth-child(5) { border-left-color: #fcc419; }
+        .hierarchy-box:nth-child(5) .hierarchy-title { color: #fab005; }
+        
+        .hierarchy-box:nth-child(6) { border-left-color: #845ef7; }
+        .hierarchy-box:nth-child(6) .hierarchy-title { color: #6741d9; }
+
+        /* Author styling */
+        p b {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: 700;
-            color: #1c7ed6;
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .slides section {
+                padding: 40px 30px;
+                border-radius: 30px;
+                max-height: 85vh;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            p, li {
+                font-size: 1.1rem;
+            }
+
+            .team-container {
+                grid-template-columns: 1fr !important;
+                gap: 20px;
+            }
+
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                margin: 15px 0;
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Scrollbar for slides */
+        .slides section.present::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .slides section.present::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .slides section.present::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #6c5ce7, #ff6b9d);
+            border-radius: 10px;
+        }
+
+        .slides section.present::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #5a4fcf, #e55a8d);
+        }
+
+        /* ===== Quiz/Game Styles ===== */
+        .quiz-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .quiz-question {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 35px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            border-left: 6px solid #6c5ce7;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .quiz-question i {
+            font-size: 2rem;
+            color: #6c5ce7;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .quiz-option {
+            padding: 25px 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 3px solid rgba(108, 92, 231, 0.3);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: optionSlideIn 0.5s ease-out backwards;
+            user-select: none;
+        }
+
+        .quiz-option:nth-child(1) { animation-delay: 0.1s; }
+        .quiz-option:nth-child(2) { animation-delay: 0.2s; }
+        .quiz-option:nth-child(3) { animation-delay: 0.3s; }
+        .quiz-option:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes optionSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .quiz-option::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+            transition: left 0.5s;
+        }
+
+        .quiz-option:hover::before {
+            left: 100%;
+        }
+
+        .quiz-option:hover:not(.correct):not(.incorrect):not(.disabled) {
+            transform: translateY(-5px) scale(1.02);
+            border-color: #6c5ce7;
+            box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Disabled state - tidak bisa diklik */
+        .quiz-option.disabled {
+            pointer-events: none !important;
+            cursor: not-allowed !important;
+            opacity: 0.6 !important;
+        }
+
+        .quiz-option.disabled:hover {
+            transform: none !important;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .quiz-option.correct {
+            background: linear-gradient(135deg, #51cf66, #40c057);
+            color: white;
+            border-color: #40c057;
+            animation: correctPulse 0.6s ease;
+            box-shadow: 0 8px 25px rgba(81, 207, 102, 0.4);
+        }
+
+        .quiz-option.correct i {
+            color: white;
+        }
+
+        .quiz-option.incorrect {
+            background: linear-gradient(135deg, #ff6b6b, #fa5252);
+            color: white;
+            border-color: #fa5252;
+            animation: shake 0.5s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        .quiz-option.incorrect i {
+            color: white;
+        }
+
+        @keyframes correctPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .quiz-option i {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .quiz-option:hover i {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .quiz-result {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            animation: resultFadeIn 0.5s ease-out;
+            display: none;
+        }
+
+        .quiz-result.show {
+            display: block;
+        }
+
+        .quiz-result.correct {
+            background: linear-gradient(135deg, rgba(81, 207, 102, 0.2), rgba(64, 192, 87, 0.2));
+            color: #2b8a3e;
+            border: 3px solid #51cf66;
+        }
+
+        .quiz-result.incorrect {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(250, 82, 82, 0.2));
+            color: #c92a2a;
+            border: 3px solid #ff6b6b;
+        }
+
+        @keyframes resultFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Icon Animations */
+        .icon-bounce {
+            display: inline-block;
+            animation: iconBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes iconBounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-8px) rotate(-5deg); }
+            75% { transform: translateY(-8px) rotate(5deg); }
+        }
+
+        .icon-rotate {
+            display: inline-block;
+            animation: iconRotate 3s linear infinite;
+        }
+
+        @keyframes iconRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .icon-pulse {
+            display: inline-block;
+            animation: iconPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            margin: 20px 0;
+            border: 2px solid rgba(108, 92, 231, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(108, 92, 231, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(108, 92, 231, 0.2);
+            border-color: #6c5ce7;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        /* Team Members */
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid rgba(108, 92, 231, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b9d, #c44569, #6c5ce7, #00d2d3);
+            background-size: 200% 100%;
+            animation: gradientMove 3s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(108, 92, 231, 0.3);
+        }
+
+        .team-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff6b9d, #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: iconBounce 2s ease-in-out infinite;
+        }
+
+        .team-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
             margin-bottom: 8px;
         }
+
+        .team-role {
+            font-size: 1rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
-    <!-- Background Decorations -->
-    <div class="shape shape1"></div>
-    <div class="shape shape2"></div>
-    <div class="shape shape3"></div>
+    <!-- Floating Aesthetic Shapes -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="blob blob4"></div>
 
     <div class="reveal">
         <div class="slides">
 
             <!-- SLIDE 1 -->
             <section>
-                <h1>Perda Prov. Jawa Barat No. 10 Tahun 2018</h1>
-                <h2>Pengelolaan Kekayaan Intelektual</h2>
-                <p style="opacity: 0.7;">Disusun oleh: <b>Basiran, Bima, Apis</b></p>
+                <div style="text-align: center; width: 100%;">
+                    <i class="fas fa-gavel icon-bounce" style="font-size: 4rem; color: #6c5ce7; margin-bottom: 20px; display: block;"></i>
+                    <h1>Perda Provinsi Jawa Barat<br>No. 10 Tahun 2018</h1>
+                    <h2 style="margin-top: 30px;">
+                        <i class="fas fa-lightbulb icon-pulse" style="margin-right: 15px; color: #ff6b9d;"></i>
+                        Pengelolaan Kekayaan Intelektual
+                    </h2>
+                    <div style="margin-top: 50px; padding: 40px; background: rgba(255, 255, 255, 0.85); border-radius: 25px; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);">
+                        <p style="opacity: 1; font-size: 1.5rem; margin-bottom: 25px; font-weight: 700; color: #2d3748;">
+                            <i class="fas fa-users icon-bounce" style="margin-right: 12px; color: #6c5ce7; font-size: 1.8rem;"></i>
+                            <span style="background: linear-gradient(135deg, #6c5ce7, #ff6b9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Disusun oleh:</span>
+                        </p>
+                        <div class="team-container" style="grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 30px;">
+                            <div class="team-member" style="padding: 30px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <i class="fas fa-user-graduate team-icon" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                                <div class="team-name" style="font-size: 1.4rem; font-weight: 700; color: #2d3748;">Basiran Fakhrudin</div>
+                                <div class="team-role" style="font-size: 0.9rem; color: #718096; margin-top: 5px;">Anggota Kelompok</div>
+                            </div>
+                            <div class="team-member" style="padding: 30px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <i class="fas fa-user-graduate team-icon" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                                <div class="team-name" style="font-size: 1.4rem; font-weight: 700; color: #2d3748;">Bima Junestifa</div>
+                                <div class="team-role" style="font-size: 0.9rem; color: #718096; margin-top: 5px;">Anggota Kelompok</div>
+                            </div>
+                            <div class="team-member" style="padding: 30px; min-height: 180px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <i class="fas fa-user-graduate team-icon" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                                <div class="team-name" style="font-size: 1.4rem; font-weight: 700; color: #2d3748;">Apis</div>
+                                <div class="team-role" style="font-size: 0.9rem; color: #718096; margin-top: 5px;">Anggota Kelompok</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- SLIDE 2 -->
             <section>
-                <h2>Pendahuluan</h2>
+                <h2>
+                    <i class="fas fa-book-open icon-bounce" style="margin-right: 15px; color: #3b8df7;"></i>
+                    Pendahuluan
+                </h2>
                 <ul>
-                    <li>Pentingnya perlindungan kekayaan intelektual di Jawa Barat.</li>
-                    <li>Mendorong kreativitas serta pertumbuhan inovasi daerah.</li>
-                    <li>Meliputi Hak Cipta, Paten, Merek, Rahasia Dagang, dan Desain Industri.</li>
+                    <li>
+                        <i class="fas fa-rocket" style="margin-right: 10px; color: #ff6b9d;"></i>
+                        Kekayaan intelektual menjadi fondasi perkembangan kreativitas dan inovasi daerah.
+                    </li>
+                    <li>
+                        <i class="fas fa-shield-alt" style="margin-right: 10px; color: #6c5ce7;"></i>
+                        Perlindungan KI mendukung peningkatan ekonomi dan daya saing Jawa Barat.
+                    </li>
+                    <li>
+                        <i class="fas fa-list-check" style="margin-right: 10px; color: #00d2d3;"></i>
+                        Mencakup Hak Cipta, Merek, Desain Industri, Paten, dan Rahasia Dagang.
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line" style="margin-right: 10px; color: #51cf66;"></i>
+                        Mendorong pertumbuhan ekonomi kreatif dan teknologi di Jawa Barat.
+                    </li>
                 </ul>
             </section>
 
             <!-- SLIDE 3 -->
             <section>
-                <h2>Ketentuan Utama</h2>
-                <ul>
-                    <li>KI merupakan hasil kreativitas manusia dalam ilmu pengetahuan, seni, dan teknologi.</li>
-                    <li>Pemilik KI memiliki hak eksklusif yang wajib dijaga dan dimanfaatkan.</li>
-                    <li>Pengelolaan KI dilakukan bersama pemerintah dan masyarakat.</li>
-                </ul>
+                <h2>
+                    <i class="fas fa-balance-scale icon-bounce" style="margin-right: 15px; color: #3b8df7;"></i>
+                    Ketentuan Utama
+                </h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px;">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain icon-pulse"></i>
+                        </div>
+                        <div class="feature-title">Definisi KI</div>
+                        <div class="feature-desc">
+                            KI adalah hasil kreativitas manusia dalam ilmu pengetahuan, seni, teknologi, dan inovasi.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock icon-rotate" style="animation-duration: 4s;"></i>
+                        </div>
+                        <div class="feature-title">Hak Eksklusif</div>
+                        <div class="feature-desc">
+                            Pemilik KI memperoleh hak eksklusif sebagai bentuk perlindungan hukum yang kuat.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-building icon-bounce"></i>
+                        </div>
+                        <div class="feature-title">Peran Pemerintah</div>
+                        <div class="feature-desc">
+                            Pemerintah daerah memiliki peran aktif dalam pembinaan, pengawasan, dan fasilitasi.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake icon-pulse"></i>
+                        </div>
+                        <div class="feature-title">Kolaborasi</div>
+                        <div class="feature-desc">
+                            Sinergi antara pemerintah, masyarakat, dan pelaku usaha dalam pengelolaan KI.
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- SLIDE 4 -->
             <section>
-                <h2>Implementasi Kebijakan</h2>
+                <h2>
+                    <i class="fas fa-cogs icon-rotate" style="margin-right: 15px; color: #3b8df7;"></i>
+                    Implementasi
+                </h2>
                 <ul>
-                    <li>Pemerintah membentuk lembaga khusus pengelola KI.</li>
-                    <li>Sosialisasi edukatif kepada masyarakat.</li>
-                    <li>Monitoring dan evaluasi pemanfaatan kekayaan intelektual.</li>
+                    <li>
+                        <i class="fas fa-sitemap" style="margin-right: 10px; color: #6c5ce7;"></i>
+                        Pembentukan lembaga pengelola KI oleh pemerintah provinsi Jawa Barat.
+                    </li>
+                    <li>
+                        <i class="fas fa-bullhorn" style="margin-right: 10px; color: #ff6b9d;"></i>
+                        Sosialisasi dan edukasi KI kepada masyarakat, pelaku usaha, dan akademisi.
+                    </li>
+                    <li>
+                        <i class="fas fa-clipboard-check" style="margin-right: 10px; color: #51cf66;"></i>
+                        Monitoring dan evaluasi penerapan KI secara berkala dan sistematis.
+                    </li>
+                    <li>
+                        <i class="fas fa-database" style="margin-right: 10px; color: #00d2d3;"></i>
+                        Pembangunan sistem database dan registrasi KI di tingkat provinsi.
+                    </li>
+                    <li>
+                        <i class="fas fa-gavel" style="margin-right: 10px; color: #fcc419;"></i>
+                        Penegakan hukum terhadap pelanggaran hak kekayaan intelektual.
+                    </li>
                 </ul>
             </section>
 
-            <!-- SLIDE 5 (New: HIERARKI UUD) -->
+            <!-- SLIDE 5 (Hierarki UUD) -->
             <section>
-                <h2>Hierarki Peraturan Perundang-undangan</h2>
+                <h2>Hierarki Peraturan Perundang-Undangan</h2>
 
                 <div class="hierarchy-box">
                     <div class="hierarchy-title">1. UUD 1945</div>
-                    Norma hukum tertinggi di Indonesia.
+                    <p>Dasar hukum tertinggi negara Indonesia.</p>
                 </div>
 
-                <div class="hierarchy-box" style="background:#fff0f6; border-left-color:#e64980;">
+                <div class="hierarchy-box">
                     <div class="hierarchy-title">2. Ketetapan MPR</div>
-                    Ketentuan yang memperjelas pelaksanaan UUD.
+                    <p>Menguatkan aturan pelaksanaan UUD.</p>
                 </div>
 
-                <div class="hierarchy-box" style="background:#f4fce3; border-left-color:#82c91e;">
+                <div class="hierarchy-box">
                     <div class="hierarchy-title">3. UU / Perppu</div>
-                    Peraturan yang mengatur hal penting bagi negara.
+                    <p>Aturan formal yang mengikat seluruh rakyat.</p>
                 </div>
 
-                <div class="hierarchy-box" style="background:#e8f7ff; border-left-color:#228be6;">
-                    <div class="hierarchy-title">4. PP - Peraturan Pemerintah</div>
-                    Penjabaran teknis dari Undang-Undang.
+                <div class="hierarchy-box">
+                    <div class="hierarchy-title">4. PP</div>
+                    <p>Menjabarkan aturan dari Undang-Undang.</p>
                 </div>
 
-                <div class="hierarchy-box" style="background:#fff9db; border-left-color:#fcc419;">
-                    <div class="hierarchy-title">5. Perpres - Peraturan Presiden</div>
-                    Aturan yang ditetapkan Presiden untuk menjalankan PP.
+                <div class="hierarchy-box">
+                    <div class="hierarchy-title">5. Perpres</div>
+                    <p>Peraturan yang diterbitkan Presiden.</p>
                 </div>
 
-                <div class="hierarchy-box" style="background:#f3f0ff; border-left-color:#845ef7;">
+                <div class="hierarchy-box">
                     <div class="hierarchy-title">6. Perda Provinsi</div>
-                    Termasuk → <b>Perda No. 10 Tahun 2018</b>.
+                    <p>Termasuk Perda Jawa Barat No. 10 Tahun 2018.</p>
                 </div>
             </section>
 
-            <!-- SLIDE 6 -->
+            <!-- SLIDE 6 - QUIZ 1 -->
             <section>
-                <h2>Kesimpulan</h2>
-                <ul>
-                    <li>KI adalah aset penting bagi ekonomi daerah.</li>
-                    <li>Perda ini mendukung inovasi dan kreativitas masyarakat Jabar.</li>
-                    <li>Hierarki hukum menjadi dasar kuat keberlakuan peraturan daerah.</li>
-                    <li>Mari lindungi dan manfaatkan kekayaan intelektual bersama-sama.</li>
-                </ul>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Pertanyaan 1: Apa yang dimaksud dengan Kekayaan Intelektual (KI)?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Harta benda fisik yang dimiliki seseorang</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, true)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hasil kreativitas manusia dalam ilmu pengetahuan, seni, dan teknologi</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tanah dan bangunan milik pribadi</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Uang dan investasi keuangan</span>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="result1"></div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7 - QUIZ 2 -->
+            <section>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Pertanyaan 2: Perda Provinsi Jawa Barat No. 10 Tahun 2018 mengatur tentang?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengelolaan sumber daya alam</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, true)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengelolaan Kekayaan Intelektual</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengelolaan keuangan daerah</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengelolaan pendidikan</span>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="result2"></div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8 - QUIZ 3 -->
+            <section>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Pertanyaan 3: Dalam hierarki peraturan, Perda Provinsi berada di posisi keberapa?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posisi pertama (tertinggi)</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posisi ketiga</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posisi kelima</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, true)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posisi keenam (setelah UUD, Ketetapan MPR, UU, PP, Perpres)</span>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="result3"></div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9 - QUIZ 4 -->
+            <section>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Pertanyaan 4: Manakah yang termasuk jenis Kekayaan Intelektual?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tanah dan bangunan</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, true)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hak Cipta, Merek, Paten, Desain Industri</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Kendaraan bermotor</span>
+                        </div>
+                        <div class="quiz-option" onclick="checkAnswer(this, false)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Perhiasan dan emas</span>
+                        </div>
+                    </div>
+                    <div class="quiz-result" id="result4"></div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10 -->
+            <section>
+                <h2>
+                    <i class="fas fa-check-double icon-bounce" style="margin-right: 15px; color: #3b8df7;"></i>
+                    Kesimpulan
+                </h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px;">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt icon-pulse"></i>
+                        </div>
+                        <div class="feature-title">Perlindungan KI</div>
+                        <div class="feature-desc">
+                            Perda ini memperkuat perlindungan dan pengelolaan Kekayaan Intelektual di Jawa Barat.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy icon-bounce"></i>
+                        </div>
+                        <div class="feature-title">Daya Saing</div>
+                        <div class="feature-desc">
+                            Meningkatkan daya saing, kreativitas, dan inovasi masyarakat Jawa Barat.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-balance-scale icon-rotate" style="animation-duration: 4s;"></i>
+                        </div>
+                        <div class="feature-title">Hierarki Hukum</div>
+                        <div class="feature-desc">
+                            Hierarki hukum menjamin keberlakuan aturan yang kuat, sah, dan mengikat.
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket icon-pulse"></i>
+                        </div>
+                        <div class="feature-title">Ekonomi Kreatif</div>
+                        <div class="feature-desc">
+                            Mendorong pertumbuhan ekonomi kreatif dan teknologi di Jawa Barat.
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px; text-align: center; padding: 25px; background: rgba(108, 92, 231, 0.1); border-radius: 20px;">
+                    <p style="font-size: 1.3rem; color: #2d3748;">
+                        <i class="fas fa-heart icon-pulse" style="color: #ff6b9d; margin-right: 10px;"></i>
+                        <strong>Terima kasih atas perhatiannya!</strong>
+                        <i class="fas fa-heart icon-pulse" style="color: #ff6b9d; margin-left: 10px;"></i>
+                    </p>
+                </div>
             </section>
 
         </div>
@@ -227,9 +1226,113 @@
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
     <script>
         Reveal.initialize({
-            transition: "convex",
-            backgroundTransition: "fade"
+            transition: "slide",
+            backgroundTransition: "fade",
+            controls: true,
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            hash: true,
+            keyboard: true,
+            overview: true,
+            autoSlide: 0,
+            transitionSpeed: "default"
         });
+
+        // Enhanced animations on slide change
+        Reveal.addEventListener('slidechanged', function(event) {
+            // Animate list items
+            const listItems = event.currentSlide.querySelectorAll('li');
+            listItems.forEach((item, index) => {
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Animate hierarchy boxes
+            const boxes = event.currentSlide.querySelectorAll('.hierarchy-box');
+            boxes.forEach((box, index) => {
+                box.style.animationDelay = `${index * 0.15}s`;
+            });
+
+            // Reset quiz options when changing slides
+            const quizOptions = event.currentSlide.querySelectorAll('.quiz-option');
+            quizOptions.forEach(option => {
+                // Reset classes
+                option.classList.remove('correct', 'incorrect', 'disabled');
+                
+                // Reset styles
+                option.style.pointerEvents = 'auto';
+                option.style.cursor = 'pointer';
+                option.style.opacity = '1';
+                option.style.transform = '';
+                
+                // Restore onclick - ambil dari data attribute atau dari HTML original
+                const originalOnclick = option.getAttribute('data-original-onclick');
+                if (originalOnclick) {
+                    option.setAttribute('onclick', originalOnclick);
+                }
+            });
+
+            // Hide quiz results
+            const quizResults = event.currentSlide.querySelectorAll('.quiz-result');
+            quizResults.forEach(result => {
+                result.classList.remove('show');
+                result.innerHTML = '';
+            });
+        });
+
+        // Store original onclick when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                const onclick = option.getAttribute('onclick');
+                if (onclick) {
+                    option.setAttribute('data-original-onclick', onclick);
+                }
+            });
+        });
+
+        // Quiz Function
+        function checkAnswer(element, isCorrect) {
+            const allOptions = element.parentElement.querySelectorAll('.quiz-option');
+            const resultDiv = element.parentElement.nextElementSibling;
+            
+            // Mark the clicked option
+            if (isCorrect) {
+                // Jika jawaban BENAR: Disable semua opsi
+                allOptions.forEach(option => {
+                    option.style.pointerEvents = 'none';
+                    option.style.cursor = 'not-allowed';
+                    option.removeAttribute('onclick');
+                    option.classList.add('disabled');
+                    option.onclick = null;
+                });
+
+                element.classList.add('correct');
+                resultDiv.className = 'quiz-result correct show';
+                resultDiv.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 10px; font-size: 1.5rem;"></i><strong>Benar!</strong> Jawaban Anda tepat.';
+                
+                setTimeout(() => {
+                    element.style.transform = 'scale(1.1)';
+                    setTimeout(() => {
+                        element.style.transform = 'scale(1)';
+                    }, 200);
+                }, 100);
+            } else {
+                // Jika jawaban SALAH: Hanya disable opsi yang salah, opsi lain masih bisa diklik
+                element.style.pointerEvents = 'none';
+                element.style.cursor = 'not-allowed';
+                element.removeAttribute('onclick');
+                element.classList.add('disabled', 'incorrect');
+                element.onclick = null;
+                element.style.opacity = '0.6';
+
+                resultDiv.className = 'quiz-result incorrect show';
+                resultDiv.innerHTML = '<i class="fas fa-times-circle" style="margin-right: 10px; font-size: 1.5rem;"></i><strong>Maaf!</strong> Jawaban Anda kurang tepat. Silakan coba jawaban lain.';
+                
+                // Opsi lain tetap aktif dan bisa diklik
+            }
+        }
     </script>
+
 </body>
 </html>
